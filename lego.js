@@ -17,7 +17,7 @@ function joonistaKiiver(){
 	t.stroke();
 	t.fillStyle="black";
 	t.fillRect(130, 25,40 ,7);
-	t.fillStyle="white";
+	
 	
 	joonistaKiiver2();
 
@@ -113,11 +113,22 @@ function joonistaKaed(){
 	t.moveTo(85, 75);
 	t.lineTo(85, 83);
 
+	// parem kinnas
+
+	t.moveTo(202, 28);
+	t.lineTo(204, 24);
+
+	// vasak kinnas
+
+	t.moveTo(85, 79);
+	t.lineTo(80,79);
 
 
 	t.stroke();
 	kyynarnukk1();
 	kyynarnukk2();
+	kinnas1();
+	kinnas2();
 }
 
 function kyynarnukk1(){
@@ -141,6 +152,28 @@ function kyynarnukk2(){
 
 	t.stroke();
 
+}
+
+function kinnas1(){
+
+	var t=document.getElementById("tahvel").getContext("2d");
+
+	t.beginPath();
+	
+	t.arc(204, 20, 4, 0, Math.PI, false);
+
+	t.stroke();
+}
+
+function kinnas2(){
+
+	var t=document.getElementById("tahvel").getContext("2d");
+
+	t.beginPath();
+	
+	t.arc(76, 79, 4, 0, 90, 180);
+
+	t.stroke();
 }
 
 
