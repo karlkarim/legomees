@@ -3,6 +3,8 @@ function kustuta(){
 	t.clearRect(0, 0, 300, 200);
 }
 
+
+
 function joonistaKiiver(){
 	var t=document.getElementById("tahvel").getContext("2d");
 	t.beginPath();
@@ -176,4 +178,60 @@ function kinnas2(){
 	t.stroke();
 }
 
+function joonistaMook(){
+
+	var t=document.getElementById("tahvel").getContext("2d");
+	
+
+	t.fillStyle="gray";
+	t.fillRect(74, 60,5 ,25);
+
+	t.moveTo(77, 60);
+	t.lineTo(77, 15);
+
+	t.stroke();
+	
+}
+
+function lego(){
+
+	joonistaKeha();
+	joonistaKiiver();
+	joonistaJalad();
+	joonistaKaed();
+	joonistaMook();
+	joonistaTekst(); 
+	joonistaTekst();
+	
+}
+
+function joonistaTekst(){
+
+	var t=document.getElementById("tahvel").getContext("2d");
+
+	t.font = "20px Arial";
+	t.strokeText("See ei ole STARWars", 30, 185)
+}
+
+function joonistaTahed(){
+	
+	var t=document.getElementById("tahvel").getContext("2d");
+	
+	t.fillRect(10,10, 5,5);
+	t.fillRect(180,60, 5,5);
+	t.fillRect(120,95, 5,5);
+	t.fillRect(100,150, 5,5);
+	t.fillRect(50,75, 5,5);
+	t.fillRect(35,120, 5,5);
+	t.fillRect(110,20, 5,5);
+	t.fillRect(275,5, 5,5);
+	t.fillRect(258, 185, 5,5);
+	t.fillRect(200, 155, 5,5);
+	t.fillRect(240, 125, 5,5);
+	t.fillRect(225, 90, 5,5);
+	t.fillRect(280, 50, 5,5);
+	
+
+	
+}
 
